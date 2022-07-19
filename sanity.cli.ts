@@ -9,7 +9,6 @@ export default createCliConfig({
   vite: (config): UserConfig => {
     return {
       ...config,
-      plugins,
       build: {
         ...config.build,
         minify: 'esbuild',
