@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "start": "sanity start",
+        "format": "npx prettier --write .",
     "build": "sanity build"
   },
   "prettier": {
