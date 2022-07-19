@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "start": "sanity start",
-        "format": "npx prettier --write .",
-    "build": "sanity build"
+    "build": "sanity build",
+    "format": "npx prettier --write .",
+    "start": "sanity start"
   },
   "prettier": {
     "semi": false,
