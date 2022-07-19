@@ -1,16 +1,13 @@
 {
-  "name": "my-sanity-project",
   "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"
   },
-  "keywords": [
-    "sanity"
-  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -23,12 +20,7 @@
     "@sanity/eslint-config-studio": "^2.0.0",
     "eslint": "^8.6.0",
     "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.2.18",
     "typescript": "^4.0.0"
-  },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
   }
 }
