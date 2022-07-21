@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    // target needs to be es2017 or newer to allow top-level await
+    "target": "es2017",
+
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
