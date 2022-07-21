@@ -3,7 +3,7 @@
 // Expect this to get much easier before v3 hits stable
 
 import React from 'react'
-import { type DefaultDocumentProps } from 'sanity'
+import {type DefaultDocumentProps} from 'sanity'
 import {GlobalErrorHandler} from 'sanity/_unstable'
 
 const globalStyles = `
@@ -37,7 +37,6 @@ function Favicons({basePath}: FaviconProps) {
   )
 }
 
-
 const EMPTY_ARRAY: never[] = []
 export default function DefaultDocument(props: DefaultDocumentProps): React.ReactElement {
   const {entryPath, css = EMPTY_ARRAY, basePath = '/'} = props
@@ -49,7 +48,10 @@ export default function DefaultDocument(props: DefaultDocumentProps): React.Reac
         <meta name="robots" content="noindex" />
         <meta name="referrer" content="same-origin" />
         {/* This is the only line of code we're adding that is different from the default implementation of DefaultDocument */}
-        <link rel="modulepreload" href="https://themer.creativecody.dev/api/hues?preset=verdant&amp;min=1" />
+        <link
+          rel="modulepreload"
+          href={'https://themer.creativecody.dev/api/hues?preset=verdant&min=1'}
+        />
 
         <Favicons basePath={basePath} />
 
