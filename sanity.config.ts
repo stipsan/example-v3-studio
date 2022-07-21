@@ -3,10 +3,10 @@ import { deskTool } from 'sanity/desk'
 
 import { schemaTypes } from './schemas'
 
-// @ts-expect-error
-const { theme } = await import(
-  /* webpackIgnore: true */ 'https://themer.creativecody.dev/api/hues?default=845b52;600&primary=f6401a&transparent=845b52;600&positive=43d675;300&caution=fbd024;200&critical=f02f34&lightest=fdfcfc&darkest=150f0d&min=1'
+const { theme, hues, createTheme } = await import(
+  'http://localhost:3000/api/hues?default=a2a19e;400&primary=c9bab5;300&transparent=a2a19e;400&positive=43d675;300&caution=fbd024;200&critical=f0392f&lightest=fafafa&darkest=121211'
 )
+console.log(createTheme(hues), { hues })
 
 export default createConfig({
   name: 'default',
@@ -16,9 +16,7 @@ export default createConfig({
   projectId: 'dlr8fnur',
   dataset: 'production',
 
-  plugins: [
-    deskTool(),
-  ],
+  plugins: [deskTool()],
 
   schema: {
     types: schemaTypes,
