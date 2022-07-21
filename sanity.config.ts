@@ -3,8 +3,8 @@ import { deskTool } from 'sanity/desk'
 
 import { schemaTypes } from './schemas'
 
-const { theme, hues, createTheme } = await import(
-  'http://localhost:3000/api/hues?default=a2a19e;400&primary=c9bab5;300&transparent=a2a19e;400&positive=43d675;300&caution=fbd024;200&critical=f0392f&lightest=fafafa&darkest=121211'
+const { theme, createTheme, hues } = await import(
+  'https://themer.creativecody.dev/api/hues?preset=verdant&min=1'
 )
 console.log(createTheme(hues), { hues })
 

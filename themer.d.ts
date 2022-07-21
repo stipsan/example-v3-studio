@@ -1,4 +1,4 @@
-module 'http://localhost:3000/api/hues?*' {
+module 'https://themer.creativecody.dev/api/hues?*' {
   interface Hue
     extends Omit<import('@sanity/color').ColorHueConfig, 'title' | 'midPoint'> {
     midPoint: 50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 950
@@ -13,7 +13,7 @@ module 'http://localhost:3000/api/hues?*' {
   }
   const hues: Hues
   type Theme = import('sanity').StudioTheme
-  const createTheme = (hues: Hues) => Theme
+  const createTheme = (hues: Hues): Theme => theme
   const theme: Theme
 
   export { hues, createTheme, theme }
