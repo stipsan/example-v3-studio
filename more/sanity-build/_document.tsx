@@ -50,7 +50,7 @@ export default function DefaultDocument(props: DefaultDocumentProps): React.Reac
         {/* This is the only line of code we're adding that is different from the default implementation of DefaultDocument */}
         <link
           rel="modulepreload"
-          href={'https://themer.creativecody.dev/api/hues?preset=verdant&min=1'}
+          href={'https://themer.creativecody.dev/api/hues?default=8bb9b5;400&primary=fa7a78;400&transparent=8bb9b5;400&positive=43d675;300&caution=fbd024;200&critical=f02f53&lightest=fcfdfd&darkest=0d1515&min=1'}
         />
 
         <Favicons basePath={basePath} />
@@ -59,7 +59,7 @@ export default function DefaultDocument(props: DefaultDocumentProps): React.Reac
 
         <GlobalErrorHandler />
 
-        {css.map((href) => (
+        {css.map(href => (
           <link key={href} rel="stylesheet" href={href} />
         ))}
         <style>{globalStyles}</style>
