@@ -3,7 +3,6 @@
 // Expect this to get much easier before v3 hits stable
 
 import React from 'react'
-import {type DefaultDocumentProps} from 'sanity'
 import {GlobalErrorHandler} from 'sanity/_unstable'
 
 const globalStyles = `
@@ -21,11 +20,7 @@ const globalStyles = `
   }
 `
 
-interface FaviconProps {
-  basePath: string
-}
-
-function Favicons({basePath}: FaviconProps) {
+function Favicons({basePath}) {
   const base = `${basePath.replace(/\/+$/, '')}/static`
   return (
     <>
@@ -37,8 +32,8 @@ function Favicons({basePath}: FaviconProps) {
   )
 }
 
-const EMPTY_ARRAY: never[] = []
-export default function DefaultDocument(props: DefaultDocumentProps): React.ReactElement {
+const EMPTY_ARRAY = []
+export default function DefaultDocument(props) {
   const {entryPath, css = EMPTY_ARRAY, basePath = '/'} = props
   return (
     <html lang="en">
@@ -50,7 +45,9 @@ export default function DefaultDocument(props: DefaultDocumentProps): React.Reac
         {/* This is the only line of code we're adding that is different from the default implementation of DefaultDocument */}
         <link
           rel="modulepreload"
-          href={'https://themer.creativecody.dev/api/hues?default=8bb9b5;400&primary=fa7a78;400&transparent=8bb9b5;400&positive=43d675;300&caution=fbd024;200&critical=f02f53&lightest=fcfdfd&darkest=0d1515&min=1'}
+          href={
+            'https://themer.creativecody.dev/api/hues?default=8bb9b5;400&primary=fa7a78;400&transparent=8bb9b5;400&positive=43d675;300&caution=fbd024;200&critical=f02f53&lightest=fcfdfd&darkest=0d1515&min=1'
+          }
         />
 
         <Favicons basePath={basePath} />
@@ -59,7 +56,7 @@ export default function DefaultDocument(props: DefaultDocumentProps): React.Reac
 
         <GlobalErrorHandler />
 
-        {css.map(href => (
+        {css.map((href) => (
           <link key={href} rel="stylesheet" href={href} />
         ))}
         <style>{globalStyles}</style>
