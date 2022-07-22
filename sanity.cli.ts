@@ -1,5 +1,5 @@
 import { createCliConfig } from 'sanity/cli'
-import { type UserConfig } from "vite";
+import { type UserConfig } from 'vite'
 
 export default createCliConfig({
   api: {
@@ -11,9 +11,8 @@ export default createCliConfig({
       ...config,
       build: {
         ...config.build,
-        minify: 'esbuild',
-        target: "esnext"
+        target: 'esnext',
       },
-    };
+    }
   },
 })
