@@ -18,8 +18,8 @@ console.log(theme)
 
 export default createConfig({
   theme,
-  name: 'default',
-  title: 'themer-sanity-build',
+  name: 'themer-sanity-build',
+  title: 'My Sanity Project',
 
   projectId: 'kieaexhf',
   dataset: 'production',
