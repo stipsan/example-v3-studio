@@ -1,4 +1,5 @@
 {
+  "https://themer.creativecody.dev/api/hues?preset=dew&min=1": { "integrity": "sha512-BrH41pzT9R7ZDmM0gniUa4twNzmv28hEtVCE/V71vaunWng25+HR6PzHez/HcYq3Ohaqkepa9RDcrJe5to7EOw==", "contentType": "application/javascript; charset=utf-8" },
   "https://themer.creativecody.dev/api/hues?preset=verdant&min=1": { "integrity": "sha512-pLTaIGz8ED1QG9WR3CLIvUyiunar7olXm44GwQM3/t2Ec5uFQLUHJcgQP69XeIvg2ox7xPzr0aNmlcbjthawow==", "contentType": "application/javascript; charset=utf-8" },
   "version": 1
 }
