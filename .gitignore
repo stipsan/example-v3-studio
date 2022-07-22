@@ -24,3 +24,5 @@
 
 # Typescript
 *.tsbuildinfo
+.vercel
+.next
