@@ -1,6 +1,6 @@
 import {createConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
-import {theme} from 'https://themer.creativecody.dev/api/hues?preset=dew&min=1'
+import {theme} from 'https://themer.creativecody.dev/api/hues?preset=pink-synth&min=1'
 
 import {schemaTypes} from './schemas'
 
