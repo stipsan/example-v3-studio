@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.0",
-    "@types/jest": "^28.1.6",
+    "@types/jest": "^29.0.0",
     "@types/node": "^18.0.6",
     "@types/react": "^18.0.15",
     "@types/styled-components": "^5.1.25",
