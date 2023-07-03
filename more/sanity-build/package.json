@@ -17,7 +17,7 @@
     "react-icons": "^3.11.0",
     "react-is": "^17.0.0",
     "sanity": "dev-preview",
-    "styled-components": "^5.2.0"
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.0",
